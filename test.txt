@@ -1,1 +1,116 @@
-first txt
+
+USER@DESKTOP-JVPT89R MINGW64 ~
+$ cd
+
+USER@DESKTOP-JVPT89R MINGW64 ~
+$ cd /c
+
+USER@DESKTOP-JVPT89R MINGW64 /c
+$ ls
+'$RECYCLE.BIN'/             IO.SYS                  ProgramData/
+ autoexec.bat               MSDOS.SYS               Recovery/
+ C/                         MSOCache/               RRbackups/
+ config.sys                 NPE/                    swapfile.sys
+'Documents and Settings'@   Oracle/                 SWSHARE/
+ Downloads/                 pagefile.sys            SWTOOLS/
+ DRIVERS/                   Paint.lnk*             'System Volume Information'/
+ ESD/                       PerfLogs/               temp/
+ Git/                       preboot/                tvtos/
+ hiberfil.sys              'Program Files'/         Users/
+ Intel/                    'Program Files (x86)'/   Windows/
+
+USER@DESKTOP-JVPT89R MINGW64 /c
+$ cd git
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git
+$ ls
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git
+$ git config --global user.name "SimCoderYoutube"
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git
+$ git config --global user.name "mkkaliel"
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git
+$ git config --global user.email mkkaliel@gmail.com
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git
+$ git clone https://github.com/mkkaliel/TestGit.git
+Cloning into 'TestGit'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git
+$ ls
+'New Text Document.txt'   TestGit/
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git
+$ cd testGit
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ git add New Text Document.txt
+fatal: pathspec 'New' did not match any files
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ git add Document.txt
+fatal: pathspec 'Document.txt' did not match any files
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ ls
+README.md
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ ls
+README.md  test.txt
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ git add test.txt
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test.txt
+
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ git commit -m "first commit" text.txt
+error: pathspec 'text.txt' did not match any file(s) known to git
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ git commit -m "first commit" test.txt
+[master dac8925] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+
+remote: Anonymous access to mkkaliel/TestGit.git denied.
+fatal: Authentication failed for 'https://github.com/mkkaliel/TestGit.git/'
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 276 bytes | 138.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mkkaliel/TestGit.git
+   617669d..dac8925  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+USER@DESKTOP-JVPT89R MINGW64 /c/git/testGit (master)
+$
